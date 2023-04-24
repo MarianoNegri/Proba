@@ -76,3 +76,19 @@ p2 <- dbinom(7,9,0.5)
 p <- p1*0.5+p2*0.5
 ```
 </details>
+  
+
+4) En la producción de cierto tipo de tela, el número de defectos por metro ($Y$) es una variable aleatoria que
+puede asumirse que se distribuye como una Poisson de parámetro 12. La ganancia del fabricante (en unidades
+monetarias por metro de tela) puede suponerse dada por $X = 257 - 2Y - Y^2$. ¿Cuánto es la ganancia esperada? **Respuesta:** $a) \text{ }77$
+
+<details>
+  <summary>Tocar para ver resolución del ejercicio 4</summary>
+  
+Tenemos $Y = \text{número de defectos por metro}$, $Y \sim P(12)$. Recordemos que $Var\[Y\] =  E\[Y^2\] - E\[Y\]^2$ con lo cual $E\[Y^2\] = Var\[Y\] + E\[Y\]^2$ 
+  
+Nos piden calcular $E\[ X \] = E\[ 257 \] - 2E\[ Y \] - E\[ Y^2 \] = 257 - 2E\[ Y \] - Var\[Y\] - E\[Y\]^2$.
+  
+Como sabemos que la esperanza y la varianza de una Poisson de parámetro $12$ es $12$, tenemos entonces que $$E\[X\] = 257 - 2\cdot 12 - 12^2 - 12 = 77$$.
+  
+</details>
