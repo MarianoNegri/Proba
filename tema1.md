@@ -34,4 +34,16 @@ p = p1+p2+p3+p4
 se sabe que resulta negativo en el 32% de los casos. Sin embargo, este porcentaje cambia cuando se testea a
 la población de verdaderos enfermos con el virus: al 68.42% de la población que padece la enfermedad viral, el
 test para detectarla le resulta negativo. Si un paciente adulto elegido al azar recibe un test negativo para la
-enfermedad, ¿cuál es la probabilidad de que realmente la padezca?
+enfermedad, ¿cuál es la probabilidad de que realmente la padezca? **Respuesta:** $d) \text{ }0.4063$
+
+<details>
+  <summary>Tocar para ver resolución del ejercicio 1</summary>
+Sabemos que: 
+
+- $P(\text{Estar Enfermo}) = 0.19$
+- $P(\text{El test salga negativo}) = 0.32$
+- $P(\text{El test salga negativo} | \text{Estar Enfermo}) = 0.6842$
+
+y nos preguntan $P(\text{Estar Enfermo}|\text{El test salga negativo})$. Por Bayes tenemos
+$$P(\text{Estar Enfermo}|\text{El test salga negativo}) = \frac{P(\text{El test salga negativo} | \text{Estar Enfermo}) P(\text{Estar Enfermo})}{P(\text{El test salga negativo})} = \frac{0.6842 \cdot 0.19}{0.32} = 0.4062438$$
+<\details>
