@@ -168,5 +168,7 @@ Entonces tenemos: $$P(S_n > 3310) = 1 - P(S_n \leq 3310) = 1 - P\Big(\frac{S_n -
 Por T.C.L. sabemos que $$P\Big(\frac{S_n - n\mu}{\sigma\sqrt{n}} \leq \frac{3310 - n\mu}{\sigma\sqrt{n}}  \Big) \approx \Phi\Big( \frac{3310 - n\mu}{\sigma\sqrt{n}} \Big)$$
 Entonces $$P(S_n > 3310) \approx 1 - \Phi \Big( \frac{3310 - n\mu}{\sigma\sqrt{n}} \Big)$$
   
-Buscamos entonces el menor $n$ tal que $1 - \Phi \Big( \frac{3310 - n\mu}{\sigma\sqrt{n}} \Big) > 0.9515$, es decir el menor $n$ tal que $\Phi \Big( \frac{3310 - n\mu}{\sigma\sqrt{n}} \Big) < 0.0485$. En primer lugar, $\phi^{-1} (0.0485) = -1.659575$, es decir tenemos $$\frac{3310 - n\mu}{\sigma\sqrt{n}} < -1.659575$$
+Buscamos entonces el menor $n$ tal que $1 - \Phi \Big( \frac{3310 - n\mu}{\sigma\sqrt{n}} \Big) > 0.9515$, es decir el menor $n$ tal que $\Phi \Big( \frac{3310 - n\mu}{\sigma\sqrt{n}} \Big) < 0.0485$. En primer lugar, $\Phi^{-1} (0.0485) = -1.659575$, es decir tenemos $$\frac{3310 - n\mu}{\sigma\sqrt{n}} < -1.659575$$ 
+Llamando $m = \sqrt{n}$ tenemos que $$\frac{3310 - 9.8m^2}{\sqrt{0.23}m} < -1.659575$$ resolviendo la cuadrática tenemos $$(m - 18.4188) (m + 18.3376)) > 0$$ o sea que $m > 18.4188$ pues $m > 0$. Luego $n > 339.25219344$ o sea $n = 340$.
+   
 
