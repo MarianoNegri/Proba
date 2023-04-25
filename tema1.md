@@ -101,4 +101,17 @@ Buscamos que $$\int_0^{+\infty} f_X(s) ds = 1$$
 Una primitiva es $-4^2k(x+4)^{-4}$. Entonces $\int_0^{+\infty} f_X(s) ds = 4^2k4^{-4} = 4^{-2}k$ Con lo cual $$k = 4^2 = 16$$
   
 </details>
+
+6) Los colectivos de la línea 199 salen de la cabecera en intervalos de 18 minutos a partir de las 8 ∶ 00 am. Si un
+pasajero llega a la parada de cabecera a una hora uniformemente distribuida entre las 8 ∶ 00 am y las 8 ∶ 36 am,
+indicar el valor que corresponde a la probabilidad de que deba esperar menos de 6 minutos el colectivo. **Respuesta (no me coincide):** $ \text{ } \frac{1}{2}$
+
+
+<details>
+  <summary>Tocar para ver resolución del ejercicio 6</summary>
+
+Sea $X \sim U[0,36]$. Nos preguntan: $$P( \\{ 12 \leq X \leq 24 \\} \cup \\{30 \leq X \leq 36 \\}) = \frac{6}{36} + \frac{12}{36} = \frac{18}{36} = \frac{1}{2}$$  
+  
+</details>
+ 
   
