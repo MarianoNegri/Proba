@@ -161,7 +161,12 @@ como mínimo, deberán producirse un día cualquiera de la semana si se quiere s
 
 
   
-Definimos $X = \text{ Peso en kg de cemento producido diariamente}$. Sabemos que $E\[X\] = 9.8$ y $Var\[X\] = 0.23$.
-Definamos 
+Definimos $X = \text{ Peso en kg de una bolsa}$. Sabemos que $E\[X\] = 9.8$ y $Var\[X\] = 0.23$.
+Supongamos que se producen $n$ bolsas en un dia. Definimos la v.a. $S_n = X_1 + \dots + X_n$ con $X_i$ i.i.d. como $X$. 
+
+Entonces tenemos: $$P(S_n > 3310) = 1 - P(S_n \leq 3310) = 1 - P\Big(\frac{S_n - n\mu}{\sigma\sqrt{n}} \leq \frac{3310 - n\mu}{\sigma\sqrt{n}}  \Big)$$
+Por T.C.L. sabemos que $$P\Big(\frac{S_n - n\mu}{\sigma\sqrt{n}} \leq \frac{3310 - n\mu}{\sigma\sqrt{n}}  \Big) \approx \Phi\Big( \frac{3310 - n\mu}{\sigma\sqrt{n}} \Big)$$
+Entonces $$P(S_n > 3310) \approx 1 - \Phi \Big( \frac{3310 - n\mu}{\sigma\sqrt{n}} \Big)$$
   
-  
+Buscamos entonces el menor $n$ tal que $1 - \Phi \Big( \frac{3310 - n\mu}{\sigma\sqrt{n}} \Big) > 0.9515$, es decir el menor $n$ tal que $\Phi \Big( \frac{3310 - n\mu}{\sigma\sqrt{n}} \Big) < 0.0485$. En primer lugar, $\phi^{-1} (0.0485) = -1.659575$, es decir tenemos $$\frac{3310 - n\mu}{\sigma\sqrt{n}} < -1.659575$$
+
