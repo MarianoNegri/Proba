@@ -128,3 +128,8 @@ Esto da que $p \approx 19.8655$.
   
 </details>
   
+  
+8) Sea $(X, Y)$ el vector aleatorio con función de densidad conjunta $f_{XY}(x, y) = 4(1-(x + y)^2)$, para $0 \leq x + y \leq 1$.
+
+Indicar el valor que corresponde a $P(X + Y < 0.72)$.
+  
