@@ -92,3 +92,13 @@ Nos piden calcular $E\[ X \] = E\[ 257 \] - 2E\[ Y \] - E\[ Y^2 \] = 257 - 2E\[ 
 Como sabemos que la esperanza y la varianza de una Poisson de parámetro $12$ es $12$, tenemos entonces que $$E\[X\] = 257 - 2\cdot 12 - 12^2 - 12 = 77$$.
   
 </details>
+
+5) Sea $X$ una variable aleatoria con función de densidad $f_X(x) = \frac{64k}{(x + 4)^5}$ , para $x \geq 0$. Indicar el valor que corresponde a $k$. **Respuesta:** $a) \text{ }16$
+
+<details>
+  <summary>Tocar para ver resolución del ejercicio 5</summary>
+Buscamos que $$\int_0^{+\infty} f_X(s) ds = 1$$
+Una primitiva es $-4^2k(x+4)^{-4}$. Entonces $\int_0^{+\infty} f_X(s) ds = 4^2k4^{-4} = 4^{-2}k$ Con lo cual $$k = 4^2 = 16$$
+  
+</details>
+  
