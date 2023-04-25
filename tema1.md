@@ -28,7 +28,7 @@ p <- p1+p2+p3+p4
 
 </details>  
 
-
+***
   
 2) Se estima que el 19% de cierta población padece una enfermedad viral. Cierto test para detectar la enfermedad,
 se sabe que resulta negativo en el 32% de los casos. Sin embargo, este porcentaje cambia cuando se testea a
@@ -49,6 +49,8 @@ $$P(\text{Estar Enfermo}|\text{El test salga negativo}) = \frac{P(\text{El test 
   
 </details>
 
+***  
+  
 3) Se tienen dos dados: uno cargado, en el que los números impares tienen probabilidad 0.23 de salir cada uno, y
 uno equilibrado. Se lanza una moneda normal: si sale cara, se elige el dado cargado y si sale ceca, el equilibrado.
 Luego, se arroja el dado 9 veces de forma independiente. Indicar el valor de la probabilidad de obtener impar
@@ -77,7 +79,8 @@ p <- p1*0.5+p2*0.5
 ```
 </details>
   
-
+***
+  
 4) En la producción de cierto tipo de tela, el número de defectos por metro ($Y$) es una variable aleatoria que
 puede asumirse que se distribuye como una Poisson de parámetro 12. La ganancia del fabricante (en unidades
 monetarias por metro de tela) puede suponerse dada por $X = 257 - 2Y - Y^2$. ¿Cuánto es la ganancia esperada? **Respuesta:** $a) \text{ }77$
@@ -93,6 +96,8 @@ Como sabemos que la esperanza y la varianza de una Poisson de parámetro $12$ es
   
 </details>
 
+***  
+  
 5) Sea $X$ una variable aleatoria con función de densidad $f_X(x) = \frac{64k}{(x + 4)^5}$ , para $x \geq 0$. Indicar el valor que corresponde a $k$. **Respuesta:** $a) \text{ }16$
 
 <details>
@@ -102,6 +107,8 @@ Una primitiva es $-4^2k(x+4)^{-4}$. Entonces $\int_0^{+\infty} f_X(s) ds = 4^2k4
   
 </details>
 
+***
+  
 6) Los colectivos de la línea 199 salen de la cabecera en intervalos de 18 minutos a partir de las 8 ∶ 00 am. Si un
 pasajero llega a la parada de cabecera a una hora uniformemente distribuida entre las 8 ∶ 00 am y las 8 ∶ 36 am,
 indicar el valor que corresponde a la probabilidad de que deba esperar menos de 6 minutos el colectivo. **Respuesta:** $a) \text{ } \frac{1}{3}$
@@ -114,6 +121,8 @@ Sea $X \sim U[0,36]$. Nos preguntan: $$P( \\{ 12 \leq X \leq 18 \\} \cup \\{30 \
   
 </details>
 
+***
+  
 7) Sea $Y$ una variable aleatoria con función de densidad $f_Y(y) = \frac{2}{9}ye^{-y^2/9}$, para $y \geq 0$.
 Indicar el valor que corresponde al percentil $89$ de la variable $X = Y^2$. **Respuesta:** $a) \text{ } 19.8655$
   
@@ -127,9 +136,32 @@ Luego tenemos que resolver la ecuación $$-e^{-p/9}+1 = 0.89 \iff e^{-p/9} = 0.1
 Esto da que $p \approx 19.8655$.
   
 </details>
-  
+
+***  
   
 8) Sea $(X, Y)$ el vector aleatorio con función de densidad conjunta $f_{XY}(x, y) = 4(1-(x + y)^2)$, para $0 \leq x + y \leq 1$.
 
 Indicar el valor que corresponde a $P(X + Y < 0.72)$.
+
+<details>
+  <summary>Tocar para ver resolución del ejercicio 8</summary>
+  
+  Nos piden calcular $$\int \int_{0 < x+y < 0.72} f_{XY}(x,y) dx dy = \int \int_{-x < y < 0.72-x} 4(1-(x + y)^2) dx dy $$  
+
+  
+</details>
+
+***  
+  
+9) Diariamente, una empresa hormigonera produce una cierta variedad de cemento (en bolsas) cuyo peso, en kg,
+es una v.a. con media $\mu = 9.8$ y varianza $\sigma^2 = 0.23$. Para todo lo que sigue, suponer que todas las variables
+involucradas en esta situación son i.i.d. Usar el Teorema Central del Límite para calcular cuántas unidades,
+como mínimo, deberán producirse un día cualquiera de la semana si se quiere satisfacer un pedido de al menos
+3310 kg con probabilidad aproximada mayor que $0.9515$.
+
+
+  
+Definimos $X = \text{ Peso en kg de cemento producido diariamente}$. Sabemos que $E\[X\] = 9.8$ y $Var\[X\] = 0.23$.
+Definamos 
+  
   
