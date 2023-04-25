@@ -123,7 +123,7 @@ Indicar el valor que corresponde al percentil $89$ de la variable $X = Y^2$. **R
 Nos preguntan por un $p$ tal que $P(X \leq p) = 0.89$. Esto es $P(Y^2 \leq p) = 0.89$ o lo que es lo mismo $P(-\sqrt{p} \leq |Y| \leq \sqrt{p}) = 0.89$. En este caso, esto es lo mismo que $P(Y \leq \sqrt{p}) = 0.89$. Es decir buscamos $p$ tal que $$\int_0^{\sqrt{p}} \frac{2}{9}ye^{-y^2/9} = 0.89$$
 
 Una primitiva es $-e^{-y^2/9}$, con lo cual $$\int_0^{\sqrt{p}} \frac{2}{9}ye^{-y^2/9} = -e^{-p/9}+1$$ 
-Luego tenemos que resolver la ecuación $$-e^{-p/9}+1 = 0.89$$ 
+Luego tenemos que resolver la ecuación $$-e^{-p/9}+1 = 0.89 \iff e^{-p/9} = 0.11 \iff p = -9\text{ln}{0.11) \iff p = \text{ln}{0.11^{-9})$$ 
 Esto da que $p \approx 19.8655$.
   
 </details>
