@@ -113,5 +113,18 @@ indicar el valor que corresponde a la probabilidad de que deba esperar menos de 
 Sea $X \sim U[0,36]$. Nos preguntan: $$P( \\{ 12 \leq X \leq 18 \\} \cup \\{30 \leq X \leq 36 \\}) = \frac{6}{36} + \frac{6}{36} = \frac{12}{36} = \frac{1}{3}$$  
   
 </details>
- 
+
+7) Sea $Y$ una variable aleatoria con función de densidad $f_Y(y) = \frac{2}{9}ye^{-y^2/9}$, para $y \geq 0$.
+Indicar el valor que corresponde al percentil $89$ de la variable $X = Y^2$. **Respuesta:** $a) \text{ } 19.8655$
+  
+<details>
+  <summary>Tocar para ver resolución del ejercicio 7</summary>
+
+Nos preguntan por un $p$ tal que $P(X \leq p) = 0.89$. Esto es $P(Y^2 \leq p) = 0.89$ o lo que es lo mismo $P(-\sqrt{p} \leq |Y| \leq \sqrt{p}) = 0.89$. En este caso, esto es lo mismo que $P(Y \leq \sqrt{p}) = 0.89$. Es decir buscamos $p$ tal que $$\int_0^{\sqrt{p}} \frac{2}{9}ye^{-y^2/9} = 0.89$$
+
+Una primitiva es $-e^{-y^2/9}$, con lo cual $$\int_0^{\sqrt{p}} \frac{2}{9}ye^{-y^2/9} = -e^{-p/9}+1$$ 
+Luego tenemos que resolver la ecuación $$-e^{-p/9}+1 = 0.89$$ 
+Esto da que $p \approx 19.8655$.
+  
+</details>
   
